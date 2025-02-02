@@ -3,65 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Softwaresymas - Servicio Técnico y Reparación de Computadoras</title>
+    <title>Softwares y Más - Servicio Técnico</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Softwaresymas</h1>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <img src="logo.png" alt="Logo de Softwares y Más" class="logo">
+        <h1>Softwares y Más</h1>
+        <p>Servicio técnico en mantenimiento y reparación de computadoras</p>
     </header>
-
-    <section id="inicio">
-        <div class="container">
-            <h2>Bienvenidos a Softwaresymas</h2>
-            <p>Tu solución confiable para mantenimiento y reparación de computadoras. Ofrecemos servicios rápidos y efectivos para garantizar el buen funcionamiento de tus equipos.</p>
-        </div>
-    </section>
+    
+    <nav>
+        <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#videos">Videos</a></li>
+        </ul>
+    </nav>
 
     <section id="servicios">
-        <div class="container">
-            <h2>Servicios</h2>
-            <ul>
-                <li>Reparación de computadoras de escritorio y portátiles</li>
-                <li>Mantenimiento preventivo y correctivo</li>
-                <li>Instalación de software y actualizaciones</li>
-                <li>Recuperación de datos</li>
-            </ul>
-        </div>
+        <h2>Nuestros Servicios</h2>
+        <ul>
+            <li>Mantenimiento de computadoras</li>
+            <li>Reparación de hardware y software</li>
+            <li>Instalación de programas y sistemas operativos</li>
+        </ul>
     </section>
-
+    
+    <section id="videos">
+        <h2>Cómo trabajamos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </section>
+    
     <section id="contacto">
-        <div class="container">
-            <h2>Contacto</h2>
-            <form action="https://formspree.io/f/mvondwpb" method="POST">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Correo Electrónico</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
+        <h2>Contacto</h2>
+        <p>¿Necesitas ayuda? Contáctanos ahora.</p>
+        <a href="https://wa.me/60690148" target="_blank" class="whatsapp">Escríbenos por WhatsApp</a>
     </section>
-
+    
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Softwaresymas - Todos los derechos reservados.</p>
-        </div>
+        <p>© 2024 Softwares y Más. Todos los derechos reservados.</p>
     </footer>
+    
+    <!-- Chatbot -->
+    <script>
+        (function() {
+            var script = document.createElement("script");
+            script.src = "https://cdn.jsdelivr.net/gh/your-chatbot/chat.js";
+            document.body.appendChild(script);
+        })();
+    </script>
 </body>
 </html>
+
