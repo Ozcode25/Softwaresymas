@@ -1,15 +1,40 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        }
-    ]
+  "siteInfo": {
+    "name": "Softwaresymas",
+    "description": "Servicio técnico de computadoras, soluciones rápidas y efectivas para el mantenimiento y reparación de computadoras.",
+    "socialLinks": {
+      "whatsapp": "https://wa.me/50760690148",
+      "instagram": "https://www.instagram.com/softwaresymas?igsh=MTQ1Z2tsN2JxYWd2Ng=="
+    },
+    "contactForm": {
+      "recipientEmail": "contact@softwaresymas.com",
+      "successMessage": "¡Gracias por tu mensaje! Nos pondremos en contacto pronto."
+    }
+  },
+  "services": [
+    {
+      "title": "Reparación de computadoras",
+      "description": "Reparación de computadoras de escritorio y portátiles."
+    },
+    {
+      "title": "Mantenimiento preventivo y correctivo",
+      "description": "Mantenimiento preventivo para mejorar el rendimiento y corrección de problemas."
+    },
+    {
+      "title": "Instalación de software",
+      "description": "Instalación de software actualizado y compatible con tu dispositivo."
+    },
+    {
+      "title": "Recuperación de datos",
+      "description": "Recuperación de datos perdidos o dañados de discos duros y otros dispositivos."
+    }
+  ],
+  "contactDetails": {
+    "address": "Calle 123, Ciudad, País",
+    "phone": "+507 6069-0148",
+    "email": "contact@softwaresymas.com"
+  },
+  "footer": {
+    "text": "© 2025 Softwaresymas - Todos los derechos reservados."
+  }
 }
