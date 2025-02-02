@@ -9,20 +9,49 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #0073e6;
+    background: linear-gradient(90deg, #0073e6, #8a2be2); /* Azul y lila */
     color: white;
     text-align: center;
     padding: 20px;
+    position: relative;
 }
 
+/* Logo con enlace */
 .logo {
-    width: 100px;
+    width: 120px;
     height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Redes Sociales */
+.social-media {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Títulos llamativos */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 28px;
+    color: #0073e6;
 }
 
 /* Navegación */
 nav {
-    background-color: #005bb5;
+    background-color: #25D366; /* Verde */
     padding: 10px 0;
     text-align: center;
 }
@@ -49,23 +78,18 @@ section {
     text-align: center;
 }
 
-#servicios ul {
+#servicios ul, #consejos ul {
     list-style: none;
     padding: 0;
 }
 
-#servicios ul li {
+#servicios ul li, #consejos ul li {
     background: #0073e6;
     color: white;
-    padding: 10px;
+    padding: 15px;
     margin: 10px;
     border-radius: 5px;
-}
-
-/* Videos */
-iframe {
-    max-width: 100%;
-    border-radius: 10px;
+    font-size: 18px;
 }
 
 /* Contacto */
@@ -85,7 +109,7 @@ iframe {
 
 /* Pie de página */
 footer {
-    background-color: #333;
+    background: linear-gradient(90deg, #8a2be2, #0073e6);
     color: white;
     text-align: center;
     padding: 10px;
