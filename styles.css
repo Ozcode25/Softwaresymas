@@ -9,15 +9,33 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4; /* Fondo gris claro */
-    color: #333; /* Texto oscuro para buen contraste */
+    color: #333; /* Texto oscuro */
     line-height: 1.6;
     padding: 0 20px;
 }
 
-/* Contenedor general */
-.container {
-    width: 80%;
-    margin: 0 auto;
+/* Barra superior */
+.top-bar {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.top-bar .social-icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.top-bar .social-icon:hover {
+    color: #00b4d8; /* Color azul tecnología */
 }
 
 /* Encabezado */
@@ -146,26 +164,6 @@ nav ul li a:hover {
     background-color: #009ab6;
 }
 
-/* Sección de íconos sociales */
-.social-icons {
-    margin-top: 30px;
-}
-
-.social-icons a {
-    text-decoration: none;
-    color: #333;
-    margin: 0 20px;
-    font-size: 1.5rem;
-}
-
-.social-icons a:hover {
-    color: #00b4d8; /* Azul tecnología */
-}
-
-.social-icons img {
-    margin-right: 10px;
-}
-
 /* Footer */
 footer {
     background-color: #333;
@@ -197,8 +195,7 @@ footer p {
         width: 100%;
     }
 
-    .social-icons {
-        display: flex;
-        justify-content: center;
+    .top-bar .container {
+        flex-direction: column;
     }
 }
