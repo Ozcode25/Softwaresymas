@@ -6,12 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Softwaresymas - Servicio Técnico y Reparación de Computadoras</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Link a los íconos subidos en tu repositorio en GitHub -->
-    <link rel="icon" href="https://github.com/tu_usuario/tu_repositorio/raw/main/instagram-icon.png" type="image/png"> <!-- Cambia la URL a la correcta -->
-    <!-- Agregar íconos de Font Awesome para WhatsApp e Instagram -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Agregar los íconos de FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Barra superior con iconos de contacto -->
+    <div class="top-bar">
+        <div class="container">
+            <a href="https://www.instagram.com/softwaresymas?igsh=MTQ1Z2tsN2JxYWd2Ng==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://wa.me/50760690148" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- Encabezado y menú de navegación -->
     <header>
         <div class="container">
             <h1>Softwaresymas</h1>
@@ -20,12 +27,12 @@
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#english" id="changeLanguage">English</a></li> <!-- Opción para cambiar a inglés -->
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Sección de inicio -->
     <section id="inicio">
         <div class="container">
             <h2>Bienvenidos a Softwaresymas</h2>
@@ -33,6 +40,7 @@
         </div>
     </section>
 
+    <!-- Sección de servicios -->
     <section id="servicios">
         <div class="container">
             <h2>Servicios</h2>
@@ -45,6 +53,7 @@
         </div>
     </section>
 
+    <!-- Sección de contacto -->
     <section id="contacto">
         <div class="container">
             <h2>Contacto</h2>
@@ -60,45 +69,14 @@
 
                 <button type="submit">Enviar</button>
             </form>
-            <h3>Contáctanos</h3>
-            <p>Síguenos en nuestras redes sociales:</p>
-            <div class="social-icons">
-                <!-- Enlaza los íconos a las URLs de Instagram y WhatsApp -->
-                <a href="https://www.instagram.com/softwaresymas?igsh=MTQ1Z2tsN2JxYWd2Ng==" target="_blank" class="social-icon">
-                    <img src="https://github.com/tu_usuario/tu_repositorio/raw/main/instagram-icon.png" alt="Instagram" width="40" height="40"> Instagram
-                </a>
-                <a href="https://wa.me/50760690148" target="_blank" class="social-icon">
-                    <img src="https://github.com/tu_usuario/tu_repositorio/raw/main/whatsapp-icon.png" alt="WhatsApp" width="40" height="40"> WhatsApp
-                </a>
-            </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2025 Softwaresymas - Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <script>
-        // Cambio de idioma
-        document.getElementById('changeLanguage').addEventListener('click', function() {
-            if (document.documentElement.lang === 'es') {
-                document.documentElement.lang = 'en';
-                document.title = 'Softwaresymas - Computer Repair and Technical Service';
-                document.querySelector('#inicio h2').innerText = 'Welcome to Softwaresymas';
-                document.querySelector('#inicio p').innerText = 'Your trusted solution for computer maintenance and repair. We offer fast and effective services to ensure the proper functioning of your equipment.';
-                document.querySelector('#servicios h2').innerText = 'Services';
-                document.querySelector('#contacto h2').innerText = 'Contact Us';
-                document.querySelector('#contacto h3').innerText = 'Contact Us';
-                document.querySelector('#contacto p').innerText = 'Follow us on our social media:';
-                document.querySelector('.social-icon img').setAttribute('alt', 'Instagram');
-                document.querySelector('.social-icon').innerText = 'Instagram';
-            } else {
-                location.reload(); // Recargar para cambiar a español
-            }
-        });
-    </script>
 </body>
 </html>
-
