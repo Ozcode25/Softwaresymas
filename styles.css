@@ -1,116 +1,204 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
+/* Reset de márgenes y paddings */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    color: #333; /* Texto oscuro para buen contraste */
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Contenedor general */
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* Encabezado */
 header {
-    background: linear-gradient(90deg, #0073e6, #8a2be2); /* Azul y lila */
-    color: white;
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 20px 0;
+}
+
+header h1 {
     text-align: center;
-    padding: 20px;
-    position: relative;
-}
-
-/* Logo con enlace */
-.logo {
-    width: 120px;
-    height: auto;
-    display: block;
-    margin: 0 auto 10px;
-}
-
-/* Redes Sociales */
-.social-media {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-}
-
-.social-media img {
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-/* Títulos llamativos */
-h1 {
-    font-size: 36px;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 28px;
-    color: #0073e6;
-}
-
-/* Navegación */
-nav {
-    background-color: #25D366; /* Verde */
-    padding: 10px 0;
-    text-align: center;
+    font-size: 2.5rem;
 }
 
 nav ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
-    padding: 0;
+    padding: 10px 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
 }
 
-/* Secciones */
-section {
-    padding: 40px;
+nav ul li a:hover {
+    color: #00b4d8; /* Azul tecnología */
+    border-bottom: 2px solid #00b4d8;
+}
+
+/* Sección de inicio */
+#inicio {
+    background-color: #00b4d8; /* Azul */
+    color: #fff;
+    padding: 60px 0;
     text-align: center;
 }
 
-#servicios ul, #consejos ul {
-    list-style: none;
-    padding: 0;
+#inicio h2 {
+    font-size: 2.5rem;
 }
 
-#servicios ul li, #consejos ul li {
-    background: #0073e6;
+#inicio p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Sección de servicios */
+#servicios {
+    padding: 40px 0;
+    background-color: #fff; /* Fondo blanco */
+    text-align: center;
+}
+
+#servicios h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#servicios ul {
+    list-style: none;
+}
+
+#servicios ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Sección de contacto */
+#contacto {
+    padding: 40px 0;
+    background-color: #f9f9f9; /* Fondo gris muy claro */
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#contacto form {
+    display: grid;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contacto label {
+    font-size: 1rem;
+    color: #333;
+}
+
+#contacto input, #contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#contacto button {
+    background-color: #00b4d8; /* Azul */
     color: white;
     padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
-    font-size: 18px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-/* Contacto */
-.whatsapp {
-    display: inline-block;
-    background-color: #25D366;
-    color: white;
-    padding: 10px 20px;
-    font-size: 18px;
+#contacto button:hover {
+    background-color: #009ab6;
+}
+
+/* Sección de íconos sociales */
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
     text-decoration: none;
-    border-radius: 5px;
+    color: #333;
+    margin: 0 20px;
+    font-size: 1.5rem;
 }
 
-.whatsapp:hover {
-    background-color: #1ebc57;
+.social-icons a:hover {
+    color: #00b4d8; /* Azul tecnología */
 }
 
-/* Pie de página */
+.social-icons img {
+    margin-right: 10px;
+}
+
+/* Footer */
 footer {
-    background: linear-gradient(90deg, #8a2be2, #0073e6);
-    color: white;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Estilo responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #contacto form {
+        width: 100%;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+    }
 }
