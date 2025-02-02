@@ -3,75 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Softwares y Más - Servicio Técnico</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Softwaresymas - Servicio Técnico y Reparación de Computadoras</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Link a los íconos subidos en tu repositorio en GitHub -->
+    <link rel="icon" href="https://github.com/tu_usuario/tu_repositorio/raw/main/instagram-icon.png" type="image/png"> <!-- Cambia la URL a la correcta -->
+    <!-- Agregar íconos de Font Awesome para WhatsApp e Instagram -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <header>
-        <div class="social-media">
-            <a href="https://wa.me/60690148" target="_blank">
-                <img src="whatsapp-icon.png" alt="WhatsApp">
-            </a>
-            <a href="https://www.instagram.com/tu_instagram" target="_blank">
-                <img src="instagram-icon.png" alt="Instagram">
-            </a>
+        <div class="container">
+            <h1>Softwaresymas</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#english" id="changeLanguage">English</a></li> <!-- Opción para cambiar a inglés -->
+                </ul>
+            </nav>
         </div>
-        <a href="index.html">
-            <img src="softwaresymaslogo.png" alt="Logo de Softwares y Más" class="logo">
-        </a>
-        <h1>Softwares y Más</h1>
-        <p>Servicio técnico en mantenimiento y reparación de computadoras</p>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#consejos">Consejos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+
+    <section id="inicio">
+        <div class="container">
+            <h2>Bienvenidos a Softwaresymas</h2>
+            <p>Tu solución confiable para mantenimiento y reparación de computadoras. Ofrecemos servicios rápidos y efectivos para garantizar el buen funcionamiento de tus equipos.</p>
+        </div>
+    </section>
 
     <section id="servicios">
-        <h2>Nuestros Servicios</h2>
-        <ul>
-            <li>Mantenimiento de computadoras (Software y Hardware)</li>
-            <li>Reparación de hardware y software</li>
-            <li>Instalación de programas y sistemas operativos</li>
-            <li>Instalación de software (Antivirus, Ofimática, Diseño, etc.)</li>
-            <li>Optimización y limpieza de equipos</li>
-        </ul>
+        <div class="container">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Reparación de computadoras de escritorio y portátiles</li>
+                <li>Mantenimiento preventivo y correctivo</li>
+                <li>Instalación de software y actualizaciones</li>
+                <li>Recuperación de datos</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="consejos">
-        <h2>Consejos para el Buen Mantenimiento de tu Computadora</h2>
-        <ul>
-            <li>Mantén tu sistema operativo y programas actualizados.</li>
-            <li>Realiza limpiezas internas y externas regularmente.</li>
-            <li>Evita descargar software de fuentes no confiables.</li>
-            <li>Usa un antivirus confiable y manténlo actualizado.</li>
-            <li>Haz copias de seguridad de tus archivos importantes.</li>
-            <li>No expongas tu equipo a temperaturas extremas.</li>
-            <li>Evita conectar dispositivos USB desconocidos sin escanearlos primero.</li>
-        </ul>
-    </section>
-    
     <section id="contacto">
-        <h2>Contacto</h2>
-        <p>¿Necesitas ayuda? Contáctanos ahora.</p>
-        <a href="https://wa.me/60690148" target="_blank" class="whatsapp">Escríbenos por WhatsApp</a>
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/mvondwpb" method="POST">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <h3>Contáctanos</h3>
+            <p>Síguenos en nuestras redes sociales:</p>
+            <div class="social-icons">
+                <!-- Enlaza los íconos a las URLs de Instagram y WhatsApp -->
+                <a href="https://www.instagram.com/softwaresymas?igsh=MTQ1Z2tsN2JxYWd2Ng==" target="_blank" class="social-icon">
+                    <img src="https://github.com/tu_usuario/tu_repositorio/raw/main/instagram-icon.png" alt="Instagram" width="40" height="40"> Instagram
+                </a>
+                <a href="https://wa.me/50760690148" target="_blank" class="social-icon">
+                    <img src="https://github.com/tu_usuario/tu_repositorio/raw/main/whatsapp-icon.png" alt="WhatsApp" width="40" height="40"> WhatsApp
+                </a>
+            </div>
+        </div>
     </section>
-    
+
     <footer>
-        <p>© 2024 Softwares y Más. Todos los derechos reservados.</p>
+        <div class="container">
+            <p>&copy; 2025 Softwaresymas - Todos los derechos reservados.</p>
+        </div>
     </footer>
-    
-    <!-- Chatbot -->
+
     <script>
-        (function() {
-            var script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/gh/your-chatbot/chat.js";
-            document.body.appendChild(script);
-        })();
+        // Cambio de idioma
+        document.getElementById('changeLanguage').addEventListener('click', function() {
+            if (document.documentElement.lang === 'es') {
+                document.documentElement.lang = 'en';
+                document.title = 'Softwaresymas - Computer Repair and Technical Service';
+                document.querySelector('#inicio h2').innerText = 'Welcome to Softwaresymas';
+                document.querySelector('#inicio p').innerText = 'Your trusted solution for computer maintenance and repair. We offer fast and effective services to ensure the proper functioning of your equipment.';
+                document.querySelector('#servicios h2').innerText = 'Services';
+                document.querySelector('#contacto h2').innerText = 'Contact Us';
+                document.querySelector('#contacto h3').innerText = 'Contact Us';
+                document.querySelector('#contacto p').innerText = 'Follow us on our social media:';
+                document.querySelector('.social-icon img').setAttribute('alt', 'Instagram');
+                document.querySelector('.social-icon').innerText = 'Instagram';
+            } else {
+                location.reload(); // Recargar para cambiar a español
+            }
+        });
     </script>
 </body>
 </html>
+
