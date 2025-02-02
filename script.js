@@ -7,7 +7,7 @@ const siteInfo = {
         instagram: "https://www.instagram.com/softwaresymas?igsh=MTQ1Z2tsN2JxYWd2Ng=="
     },
     contactForm: {
-        recipientEmail: "softwaresymas507@gmail.com",
+        recipientEmail: "contact@softwaresymas.com",
         successMessage: "¡Gracias por tu mensaje! Nos pondremos en contacto pronto."
     }
 };
@@ -34,8 +34,9 @@ const services = [
 
 // Información de contacto
 const contactDetails = {
+    address: "Calle 123, Ciudad, País",
     phone: "+507 6069-0148",
-    email: "softwaresymas507@gmail.com"
+    email: "contact@softwaresymas.com"
 };
 
 // Función para cargar la información en la página
